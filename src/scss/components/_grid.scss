@@ -1,0 +1,40 @@
+.gridContainer {
+    background-color: rgb(224, 218, 218, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: fit-content;
+}
+
+.gridTile {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(202, 196, 196, 0.5);
+}
+
+.selected {
+    background-color: rgb(187, 187, 228);
+}
+
+.gridTile:hover {
+    background-color: rgb(187, 187, 228);
+    border: 1px solid rgba(238, 226, 226, 0.8);
+    cursor: pointer;
+}
+
+.resetBtn {
+    border: 1px solid rgb(169, 191, 209, 0.5);
+    width: 630px;
+    text-align: center;
+    background-color: rgb(187, 187, 228);
+    height: 80px;
+    font-size: 1.6rem;
+    transition: font-size 0.3s ease;
+}
+
+.resetBtn:hover {
+    cursor: pointer;
+    border: 1px solid rgb(169, 191, 209, 0.8);
+    font-size: 1.65rem;
+}
