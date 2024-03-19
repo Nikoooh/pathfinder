@@ -1,0 +1,48 @@
+.setterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1), -5px 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.setter {
+    font-size: 1.29rem;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    transition: font-size 0.3s ease;
+    cursor: pointer;
+}
+
+.blocker {
+    background-color: rgb(53, 53, 54, 0.5);
+    &:hover {
+        background-color: rgb(53, 53, 54, 0.65);
+        font-size: 1.3rem;
+    }
+}
+
+.goal {
+    background-color: rgb(255, 89, 47, 0.5);
+    &:hover {
+        background-color: rgb(255, 89, 47, 0.65);
+        font-size: 1.3rem;
+    }
+}
+
+.start {
+    background-color: rgb(127, 255, 133, 0.5);
+    &:hover {
+        background-color: rgb(127, 255, 133, 0.70);
+        font-size: 1.3rem;
+    }
+}
+
+.selected {
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2), -10px 0 10px rgba(0, 0, 0, 0.2);
+}

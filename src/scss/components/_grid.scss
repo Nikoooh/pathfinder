@@ -13,19 +13,43 @@
     border: 1px solid rgb(202, 196, 196, 0.5);
 }
 
-.selected {
-    background-color: rgb(187, 187, 228);
+.blockerTile {
+    background-color: rgb(53, 53, 54);
 }
 
-.gridTile:hover {
-    background-color: rgb(187, 187, 228);
-    border: 1px solid rgba(238, 226, 226, 0.8);
+.goalTile {
+    background-color: rgb(255, 89, 47, 0.5);
+}
+
+.startTile {
+    background-color: rgb(127, 255, 133, 0.5);
+}
+
+.pathTile {
+    background-color: rgba(160, 201, 235, 0.5);
+}
+
+.blockerHover:hover {
+    background-color: rgb(53, 53, 54);
+    border: 1px solid rgba(88, 86, 86, 0.8);
+    cursor: pointer;
+}
+
+.goalHover:hover {
+    background-color: rgb(255, 89, 47, 0.5);
+    border: 1px solid rgba(255, 89, 47, 0.3);
+    cursor: pointer;
+}
+
+.startHover:hover {
+    background-color: rgb(127, 255, 133, 0.5);
+    border: 1px solid rgba(127, 255, 133, 0.8);
     cursor: pointer;
 }
 
 .resetBtn {
     border: 1px solid rgb(169, 191, 209, 0.5);
-    width: 630px;
+    width: 50%;
     text-align: center;
     background-color: rgb(187, 187, 228);
     height: 80px;
@@ -36,5 +60,20 @@
 .resetBtn:hover {
     cursor: pointer;
     border: 1px solid rgb(169, 191, 209, 0.8);
-    font-size: 1.65rem;
+    font-size: 1.63rem;
+}
+
+.searchBtn {
+    border: 1px solid rgb(169, 191, 209, 0.5);
+    width: 50%;
+    text-align: center;
+    background-color: rgb(172, 224, 204);
+    height: 80px;
+    font-size: 1.6rem;
+    transition: font-size 0.3s ease;
+}
+
+.searchBtn:hover {
+    cursor: pointer;
+    font-size: 1.63rem;
 }
