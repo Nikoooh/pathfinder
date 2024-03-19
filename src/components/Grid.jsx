@@ -102,8 +102,20 @@ const Grid = () => {
             pathfind(tile)  
         } 
 
+        if (startPos[0] > endPos[0] + 1) {
+            tile[0]--
+            updateGrid(tile[0], tile[1], true)
+            pathfind(tile)  
+        } 
+
         if (startPos[1] < endPos[1]) {
             tile[1]++
+            updateGrid(tile[0], tile[1], true)
+            pathfind(tile) 
+        }
+
+        if (startPos[1] > endPos[1]) {
+            tile[1]--
             updateGrid(tile[0], tile[1], true)
             pathfind(tile) 
         } else {
