@@ -1,7 +1,8 @@
+import React from 'react'
 import './scss/index.scss'
-import Grid from './components/Grid'
-import Header from './components/Header'
-import Setter from './components/Setter'
+import Grid from './components/Grid.tsx'
+import Header from './components/Header.tsx'
+import Setter from './components/Setter.tsx'
 
 const App = () => {
   return (

@@ -1,11 +1,11 @@
-import {  useContext } from 'react'
+import React, {  useContext } from 'react'
 import { PathfindContext } from '../context/pathfindContext'
 
 const Setter = () => {
 
     const { selected, setSelected } = useContext(PathfindContext)
 
-    const handleSelection = (block) => {
+    const handleSelection = (block: string) => {
         setSelected(block)
     }
 
